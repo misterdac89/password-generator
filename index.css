@@ -1,76 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-   background-image: linear-gradient(to top, #fff, #bae7cb);
-   height: 100vh;
-   align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: linear-gradient(to top, #fff, #bae7cb);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-container {
-   width: 500px;
-   background: #1F2937;
-   border-radius: 10px;
+.primary-container {
+  min-width: 480px;
+  background: #1f2937;
+  border-radius: 8px;
 }
 
-body, .main-container {
-   display: flex;
-   justify-content: center;
+.secondary-container {
+  width: 80%;
+  margin: 5em auto;
 }
-
-.second-container {
-   width: 80%;
-   margin: 0 auto
-}
-
- h1 {
-   margin-top: 90px;
-   margin-bottom: 0;
-} 
 
 .green-text {
-   display: block;
-   color: #10B981;
+  display: block;
+  color: #10b981;
 }
 
-.main-container .second-container p {
-   font-size: 16px;
-   color: #afaeb4;
-} 
+.primary-container .secondary-container p {
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
 
 .generator-btn {
-   background: #10B981;
-   color: inherit;
-   border: none;
-   border-radius: 5px;
-   padding: 12px 20px;
-   margin-top: 30px;
-   font-size: 16px;
+  font-size: 1rem;
+  background: #10b981;
+  color: inherit;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.625em 1.25em;
+  margin: 1.25em 0 2.5em;
+  cursor: pointer;
 }
 
 .generator-btn,
-.main-container .second-container p {
-   letter-spacing: 1px;
+.primary-container .secondary-container p {
+  letter-spacing: 1px;
 }
 
 .password-container {
-   border-top: 1px solid #3c4642 ;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-top: 35px;
-   margin-bottom: 90px;
+  border-top: 1px solid #3c4642;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px;
+  column-gap: 15px;
 }
 
 .password-box {
-   width: 190px;
-   height: 30px;
-   background: #273549;
-   border: none;
-   border-radius: 5px;
-   margin-top: 35px;
+  background: #273549;
+  border: none;
+  border-radius: 8px;
+  margin-top: 2.5em;
 }
 
-.main-container, 
-.password-box, 
+.primary-container,
+.password-box,
 h1 {
-   color: #fff;
+  color: #fff;
 }
