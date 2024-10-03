@@ -4,7 +4,7 @@ const generatorBtn = document.getElementById("generator-btn");
 const passwordOne = document.getElementById("passwordOne");
 const passwordTwo = document.getElementById("passwordTwo");
 
-const passwordLength = 15;
+const passwordLength = 16;
 
 function getRandomCharacter() {
   const randomChar = Math.floor(Math.random() * characters.length);
